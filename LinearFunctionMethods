@@ -25,6 +25,17 @@ public class LinearFunction implements LinearFunctionMethods{
    public double getYIntercept() {
        return this.b;
    }
+   
+    public String toString() {
+       String res="y = "+this.m+"x";
+       if(this.b>=0) {
+           res=res+" + "+this.b;
+       }
+       else {
+           res=res+" - "+Math.abs(this.b);
+       }
+       return res;
+   }
   
 
    public double getRoot() {
